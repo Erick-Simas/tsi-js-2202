@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Minha_tela.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Calculadora</title>
 </head>
 <body>
     <form action="">
-        <label for="servico">Serviço</label>
-        <input type="text" id="servico">
+        <label for="servico">Serviços</label>
+        <select name="" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="servico">
+            <option value="0">Selecione</option>
+            <option value="1">Troca de oleo</option>
+            <option value="2">Balanceamento</option>
+            <option value="3">Cambagem</option>
+        </select>
         <br>
-        <label for="prazo">prazo</label>
-        <input type="text" id="prazo">
-        <br>
-        <p id="resultado"></p>
-        <button onclick="Calcular" id="calcular">Calcular</button>
+        <label for="prazo">Prazo</label>
+        <select name="" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="prazo">
+            <option value="0">Selecione</option>
+            <option value="1">1 Dia</option>
+            <option value="2">2 Dias</option>
+            <option value="3">3 Dias</option>
+        </select>
     </form>
+    <p id=resultado></p>
+    <button onclick="calcular" id="calcular" class="btn btn-outline-danger">Calcular</button>
+
+    <script src="ex2.js"></script>
 </body>
-<script src="ex2.js"></script>
 </html>
