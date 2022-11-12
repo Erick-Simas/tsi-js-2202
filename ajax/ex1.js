@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', recuperaConteudoDeAja
 function recuperaConteudoDeAjax(){
     const XHR = new XMLHttpRequest();
 
-    XHR.open('GET', 'http://127.0.0.1:5500/ajax/conteudo.txt', true);
+    XHR.open('GET', 'http://127.0.0.1:5500/ajax/conteudo1.txt', true);
 
 XHR.onload = function(){
     if(this.status === 200){
